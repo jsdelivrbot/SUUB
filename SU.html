@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="contact form example">
+</head>
+
+<body>
+    <h2 class="content-head is-center">Kontakta oss!</h2>
+    <aside>
+        <p>Här kan du göra felanmälan eller berätta om det är något som borde ordnas. </p>
+        <p>Tänk på att vara tydlig var felet finns när du gör en felanmälan.</p>
+        <p>Du behöver bara ange email ifall du vill kunna bli kontaktad.</p>
+    </aside>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/broccoliftw/SU/65a7dbbb/style.css">
+
+    <form id="gform" method="POST" class="pure-form pure-form-stacked" action="https://script.google.com/macros/s/AKfycbw5xW7LkZM-gyr90v3KG-lEAEl5B-MIgTlyNsbe9gUQQ2tP3T4/exec">
+        <fieldset class="pure-group">
+            <label for="name">Namn (frivilligt): </label>
+            <input id="name" name="namn" />
+        </fieldset>
+        <fieldset class="pure-group">
+            <label for="message">Meddelande: </label>
+            <textarea id="message" name="meddelande" rows="10"></textarea>
+        </fieldset>
+        <fieldset class="pure-group">
+            <label for="email">Din epostadress ifall du vill bli kontaktad (frivilligt):</label>
+            <input id="email" name="email" type="email" value="" placeholder="liuid@student.liu.se" />
+        </fieldset>
+
+        <button class="button-success pure-button button-xlarge">
+      <i class="fa fa-paper-plane"></i>&nbsp;Skicka</button>
+    </form>
+
+    <!-- Customise the Thankyou Message People See when they submit the form: -->
+    <div style="display:none;" id="thankyou_message">
+        <h2>Tack för ditt meddelande!</h2>
+    </div>
+    <!-- END -->
+    <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/broccoliftw/SU/65a7dbbb/SUHandler.js"></script>
+
+</body>
+
+</html>
